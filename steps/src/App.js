@@ -7,6 +7,16 @@ const messages = [
 export default function App() {
   const step = 1;
 
+  // hanlde previous function
+  function handlePrevious() {
+    alert("Previous");
+  }
+
+  // hanlde next function
+  function handleNet() {
+    alert("Next");
+  }
+
   return (
     <div className="steps">
       <div className="numbers">
@@ -20,10 +30,16 @@ export default function App() {
       </p>
 
       <div className="buttons">
-        <button style={{ backgroundColor: "#7950f2", color: "#fff" }}>
+        <button
+          style={{ backgroundColor: "#7950f2", color: "#fff" }}
+          onClick={handlePrevious}
+        >
           Previouse
         </button>
-        <button style={{ backgroundColor: "#7950f2", color: "#fff" }}>
+        <button
+          style={{ backgroundColor: "#7950f2", color: "#fff" }}
+          onClick={handleNet}
+        >
           Nexxt
         </button>
       </div>
